@@ -6,8 +6,10 @@ function Homepage() {
   return (
     <div className="App">
       <h1>WaveCheckme</h1>
-        <SearchBar placeholder="Enter a song" />
-      
+
+        <header>
+          <SearchBar placeholder="Enter a song" />
+        </header>
     </div>
   );
 }
