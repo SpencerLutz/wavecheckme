@@ -1,0 +1,23 @@
+{
+  "name": "wavecheckme",
+  "version": "1.0.0",
+  "description": "Music Recommendation Site",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SpencerLutz/wavecheckme.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SpencerLutz/wavecheckme/issues"
+  },
+  "homepage": "https://github.com/SpencerLutz/wavecheckme#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}
