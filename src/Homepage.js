@@ -5,7 +5,7 @@ import SearchBar from './components/SearchBar';
 function Homepage() {
   return (
     <div className="App">
-        <SearchBar />
+        <SearchBar placeholder="Enter a song" />
       <h1>WaveCheckme</h1>
     </div>
   );
