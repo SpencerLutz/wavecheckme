@@ -15,7 +15,7 @@ function Homepage() {
   return (
     <div className="App">
       <h1>WaveCheckme</h1>
-      <SearchBar placeholder="Enter a song" />
+        <SearchBar placeholder="Enter a song" />
       <p>{data}</p>
     </div>
   );
