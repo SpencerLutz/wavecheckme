@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import "./SearchBar.css";
 
 function SearchBar({ placeholder, data}) {
   return (
