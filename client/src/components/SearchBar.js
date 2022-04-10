@@ -12,7 +12,6 @@ function SearchBar({placeholder}) {
   return (
     <div className="search">
         <div className="searchInputs">
-            <p id="test">No Result Yet</p>
             <input type="text" placeholder={placeholder} onKeyDown={(e) => {
               if(e.code == "Enter") {
                 document.getElementById("test").innerHTML = "HERE";
