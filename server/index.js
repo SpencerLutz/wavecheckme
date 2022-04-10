@@ -15,10 +15,9 @@ app.get("/api", (req, res) => {
 
 app.get("/getsong", (req, res) => {
   search = req.query.search;
-  res.send(search);
   fetch("https://itunes.apple.com/search?term="+search)
-     .then((res) => res.json())
-     .then((data) => console.log(data));
+      .then((res) => res.json())
+      .then((data) => console.log(data));
 });
 
 // All other GET requests not handled before will return our React app
