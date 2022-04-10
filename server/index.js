@@ -17,8 +17,7 @@ app.get("/api", (req, res) => {
 app.get("/getsong", (req, res) => {
   search = req.query.search;
   axios.get("https://itunes.apple.com/search?term="+search)
-      .then((resp) => resp.json())
-      .then((data) => res.send(data));
+      .then((resp) => res.send(resp.data));
 });
 
 // All other GET requests not handled before will return our React app
