@@ -15,14 +15,10 @@ app.get("/api", (req, res) => {
 
 app.get("/getsong", (req, res) => {
   search = req.query.search;
-  encodeURIComponent(search).replace(/%20/g, "+");
+  res.send(search);
   fetch("https://itunes.apple.com/search?term="+search)
-      .then((res) => res.json())
-      .then((data) => console.log(data));
-});
-
-app.get('/recommend', (req, res) => {
-  res.send("Tinderpage");
+     .then((res) => res.json())
+     .then((data) => console.log(data));
 });
 
 // All other GET requests not handled before will return our React app
