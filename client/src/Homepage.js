@@ -5,22 +5,13 @@ import { useRef, useState } from 'react';
 import Modal from "./components/Modal";
 
 function Homepage() {
-  const [data, setData] = React.useState(null);
   const [isOpen, setIsOpen] = useState(false)
-
-  React.useEffect(() => {
-    fetch("/api")
-      .then((res) => res.json())
-      .then((data) => setData(data.message));
-  }, []);
-
-
 
   return (
     <div className="App">
       <img src="favicon_io/wvm.svg" alt=""/>
       <h1 style={{ color: 'white' }}>WaveCheck Me!</h1>
-      <h1></h1><h1></h1><h1></h1>
+      <h1></h1><h1></h1><h1></h1> 
       <h3 style={{ color: 'white' }}>Search for a song and we'll find you something similar. </h3>
         <SearchBar placeholder="Enter a song" />
         <button onClick={() => setIsOpen(true)}>
