@@ -2,7 +2,20 @@ import React from "react";
 import styles from "./Modal.module.css";
 import { RiCloseLine } from "react-icons/ri";
 
-const Modal = ({ setIsOpen }) => {
+const Modal = ({ setIsOpen, searchQuery }) => {
+
+  async function submit(query) {
+    const responses = await fetch('/getsong?search='+query)
+  .then(response => response.json());
+    setIsOpen(true);
+    return responses;
+  }
+
+  submit(searchQuery).then(data => {
+    var audio = new Audio(data.results[0]["previewUrl"]);
+    audio.play();
+  });
+
   return (
     <>
       <div className={styles.darkBG} onClick={() => setIsOpen(false)} />
