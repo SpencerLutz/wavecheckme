@@ -17,7 +17,6 @@ function SearchBar({placeholder}) {
       <div className="searchInputs">
         <input type="text" placeholder={placeholder} onKeyDown={(e) => {
           if(e.code == "Enter") {
-            document.getElementById("test").innerHTML = "HERE";
             let term = e.target.value;//encodeURIComponent(e.target.value).replace(/%20/g, "+");
             submit(term).then(data => {
               console.log(data.results[0]["previewUrl"]); // JSON data parsed by `data.json()` call
