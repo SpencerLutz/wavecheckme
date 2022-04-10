@@ -15,7 +15,6 @@ function Homepage() {
       <div style={{fontSize: '70px', color: 'white'}}>WaveCheck Me! </div>
       <h3 style={{ color: 'white' }}>Search for a song and we'll find you something similar. </h3>
       <SearchBar placeholder="Enter a song" setSearchQuery={(q) => {
-        console.log(q);
         setSearchQuery(q);
         setIsOpen(true);
       }}/>

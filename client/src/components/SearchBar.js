@@ -9,8 +9,7 @@ function SearchBar({placeholder, setSearchQuery}) {
       <div className="searchInputs">
         <input type="text" placeholder={placeholder} onKeyDown={(e) => {
           if(e.code == "Enter") {
-            let term = encodeURIComponent(e.target.value).replace(/%20/g, "+");//encodeURIComponent(e.target.value).replace(/%20/g, "+");
-            console.log(term);
+            let term = encodeURIComponent(e.target.value).replace(/%20/g, "+");
             setSearchQuery(term);
           }
         }}/>

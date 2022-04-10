@@ -12,6 +12,10 @@ const Modal = ({ setIsOpen, searchQuery }) => {
   }
 
   submit(searchQuery).then(data => {
+    document.getElementById("name").innerHTML = data.results[0]["trackName"];
+    document.getElementById("artist").innerHTML = "by "+data.results[0]["artistName"];
+    document.getElementById("alb").src = data.results[0]["artworkUrl100"];
+    document.getElementById("link").href = data.results[0]["trackViewUrl"];
     var audio = new Audio(data.results[0]["previewUrl"]);
     audio.play();
   });
@@ -27,16 +31,16 @@ const Modal = ({ setIsOpen, searchQuery }) => {
           <button className={styles.closeBtn} onClick={() => setIsOpen(false)}>
             <RiCloseLine style={{ marginBottom: "-3px" }} />
           </button>
-          <img className={styles.album} src="favicon_io/albumExample.png" alt=""/>
-          <div className={styles.modalContent}>
-            [song name]
+          <img id="alb" className={styles.album} src="" alt=""/>
+          <div id="name" className={styles.modalContent}>
+            
           </div>
-          <div className={styles.modalContent2}>
-            by, [artist name]
+          <div id="artist" className={styles.modalContent2}>
+            
           </div>
-          <div className={styles.modalContent3}>
-            [iTunes Link]
-          </div>
+          <a id="link" className={styles.modalContent3} href="">
+            Find on iTunes
+          </a>
           <div className={styles.modalActions}>
             <div className={styles.actionsContainer}>
               <button className={styles.deleteBtn} onClick={() => setIsOpen(false)}>
