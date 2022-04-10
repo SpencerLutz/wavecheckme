@@ -21,6 +21,9 @@ const Modal = ({ setIsOpen }) => {
           <div className={styles.modalContent2}>
             by, [artist name]
           </div>
+          <div className={styles.modalContent3}>
+            [iTunes Link]
+          </div>
           <div className={styles.modalActions}>
             <div className={styles.actionsContainer}>
               <button className={styles.deleteBtn} onClick={() => setIsOpen(false)}>

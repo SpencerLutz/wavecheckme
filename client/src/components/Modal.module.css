@@ -66,6 +66,13 @@
     text-align: center;
   }
 
+  .modalContent3 {
+    padding: 10px;
+    font-size: 15px;
+    color: #2c3e50;
+    text-align: center;
+  }
+
   .modalActions {
     position: absolute;
     bottom: 2px;
