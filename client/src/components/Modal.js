@@ -27,12 +27,15 @@ const Modal = ({ setIsOpen, searchQuery }) => {
           <button className={styles.closeBtn} onClick={() => setIsOpen(false)}>
             <RiCloseLine style={{ marginBottom: "-3px" }} />
           </button>
-          <img src="favicon_io/albumExample.png" alt=""/>
+          <img className={styles.album} src="favicon_io/albumExample.png" alt=""/>
           <div className={styles.modalContent}>
             [song name]
           </div>
           <div className={styles.modalContent2}>
             by, [artist name]
+          </div>
+          <div className={styles.modalContent3}>
+            [iTunes Link]
           </div>
           <div className={styles.modalActions}>
             <div className={styles.actionsContainer}>
