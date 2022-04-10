@@ -13,6 +13,12 @@ app.get("/api", (req, res) => {
   res.json({ message: "Hello from server!" });
 });
 
+app.get("/getsong", (req, res) => {
+  fetch("https://itunes.apple.com/search?term="+search)
+      .then((res) => res.json())
+      .then((data) => setData(data.message));
+});
+
 // All other GET requests not handled before will return our React app
 app.get('*', (req, res) => {
   res.sendFile(path.resolve(__dirname, '../client/build', 'index.html'));
