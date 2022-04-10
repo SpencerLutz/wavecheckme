@@ -17,7 +17,7 @@
   }
   
   .modal {
-    width: 50vw;
+    width: 40vw;
     height: 65vh;
     background: white;
     color: white;
@@ -39,13 +39,20 @@
     padding: 10px;
     color: #2c3e50;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 15px;
     text-align: center;
   }
   
   .modalContent {
     padding: 10px;
-    font-size: 14px;
+    font-size: 30px;
+    color: #2c3e50;
+    text-align: center;
+  }
+
+  .modalContent2 {
+    padding: 10px;
+    font-size: 20px;
     color: #2c3e50;
     text-align: center;
   }
@@ -90,7 +97,7 @@
   .deleteBtn {
     margin-top: 10px;
     cursor: pointer;
-    font-weight: 500;
+    font-weight: 1000;
     padding: 11px 28px;
     border-radius: 12px;
     font-size: 0.8rem;
@@ -109,13 +116,13 @@
   .cancelBtn {
     margin-top: 10px;
     cursor: pointer;
-    font-weight: 500;
+    font-weight: 1000;
     padding: 11px 28px;
     border-radius: 12px;
     font-size: 0.8rem;
     border: none;
     color: #2c3e50;
-    background: #fcfcfc;
+    background: #a0fe84;
     transition: all 0.25s ease;
   }
   

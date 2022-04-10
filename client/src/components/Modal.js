@@ -9,24 +9,27 @@ const Modal = ({ setIsOpen }) => {
       <div className={styles.centered}>
         <div className={styles.modal}>
           <div className={styles.modalHeader}>
-            <h5 className={styles.heading}>Dialog</h5>
+            <h5 className={styles.heading}>Your recommendation...</h5>
           </div>
           <button className={styles.closeBtn} onClick={() => setIsOpen(false)}>
             <RiCloseLine style={{ marginBottom: "-3px" }} />
           </button>
           <div className={styles.modalContent}>
-            Are you sure you want to delete the item?
+            [song name]
+          </div>
+          <div className={styles.modalContent2}>
+            by, [artist name]
           </div>
           <div className={styles.modalActions}>
             <div className={styles.actionsContainer}>
               <button className={styles.deleteBtn} onClick={() => setIsOpen(false)}>
-                Delete
+                &lt;
               </button>
               <button
                 className={styles.cancelBtn}
                 onClick={() => setIsOpen(false)}
               >
-                Cancel
+                &gt;
               </button>
             </div>
           </div>
