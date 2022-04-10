@@ -16,6 +16,10 @@ body {
    height: 100px;
  }
 
+ album {
+  height: 100px;
+ }
+
  .primaryBtn {
   margin: 20px 10px;
   cursor: pointer;
