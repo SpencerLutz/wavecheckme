@@ -1,4 +1,3 @@
-
 .darkBG {
     background-color: rgba(0, 0, 0, 0.2);
     width: 100vw;
@@ -18,8 +17,8 @@
   }
   
   .modal {
-    width: 250px;
-    height: 170px;
+    width: 50vw;
+    height: 65vh;
     background: white;
     color: white;
     z-index: 10;
