@@ -12,12 +12,13 @@ body {
   padding: 0;
   margin: 0;
 }
- img {
-   height: 100px;
- }
-
- album {
-  height: 100px;
+img {
+  height: 120px;
+  text-align: left;
+    display: block;
+    justify-content: left;
+    align-items: left;
+    margin: auto;
  }
 
  .primaryBtn {
@@ -36,4 +37,11 @@ body {
 .primaryBtn:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 20px -10px rgba(24, 90, 219, 0.6);
+}
+
+.title {
+  padding: 10px;
+  font-size: 60px;
+  color: #ffffff;
+  text-align: center;
 }

@@ -14,7 +14,7 @@ const Modal = ({ setIsOpen }) => {
           <button className={styles.closeBtn} onClick={() => setIsOpen(false)}>
             <RiCloseLine style={{ marginBottom: "-3px" }} />
           </button>
-          <img src="favicon_io/albumExample.png" alt=""/>
+          <img className={styles.album} src="favicon_io/albumExample.png" alt=""/>
           <div className={styles.modalContent}>
             [song name]
           </div>
