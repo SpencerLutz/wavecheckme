@@ -1,5 +1,6 @@
 const path = require('path');
 const express = require("express");
+const axios = require('axios');
 
 const PORT = process.env.PORT || 3001;
 
@@ -15,9 +16,9 @@ app.get("/api", (req, res) => {
 
 app.get("/getsong", (req, res) => {
   search = req.query.search;
-  fetch("https://itunes.apple.com/search?term="+search)
-      .then((res) => res.json())
-      .then((data) => console.log(data));
+  axios.get("https://itunes.apple.com/search?term="+search)
+      .then((resp) => resp.json())
+      .then((data) => res.send(data));
 });
 
 // All other GET requests not handled before will return our React app
