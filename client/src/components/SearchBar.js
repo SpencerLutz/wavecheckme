@@ -14,7 +14,8 @@ function SearchBar({ placeholder, data}) {
         <div className="searchInputs">
             <input type="text" placeholder={placeholder} onKeyDown={(e) => {
               if(e.code == "Enter" ) {
-                submit(e.target.value)
+                term = encodeURIComponent(e.target.value).replace(/%20/g, "+");
+                submit(term)
               }
             }}/>
 
