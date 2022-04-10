@@ -16,6 +16,7 @@ function Homepage() {
 
   return (
     <div className="App">
+      <img src="/wvm.jpg" alt=""/>
       <h1></h1><h1></h1><h3></h3>
       <h1 style={{ color: 'white' }}>WaveCheck Me!</h1>
       <h1></h1><h1></h1>
