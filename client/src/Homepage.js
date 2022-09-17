@@ -11,7 +11,7 @@ function Homepage() {
 
 	return (
 		<div className="App">
-			<img src="favicon_io/wvm.svg" alt=""/>
+			<img src="./images/wvm.svg" alt=""/>
 			<div className='titleTxt'>WaveCheck Me! </div>
 			<h3 className='motto'>Search for a song and we'll find you something similar. </h3>
 	  
