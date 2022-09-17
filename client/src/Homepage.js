@@ -11,8 +11,8 @@ function Homepage() {
 	return (
 		<div className="App">
 			<img src="images/wvm.svg" alt="" className='logoImg'/>
-			<div className='titleTxt'>WaveCheck Me! </div>
-			<h3 className='motto'>Search for a song and we'll find you something similar. </h3>
+			<div className='titleTxt'>WaveCheck Me!</div>
+			<h3 className='motto'>Search for a song and we'll find you something similar.</h3>
 	  
 			{/* this was the code written by the smart dude, need to look more into it to understand what's going on*/}
 			<SearchBar placeholder="Enter a song" setSearchQuery={(q) => {
