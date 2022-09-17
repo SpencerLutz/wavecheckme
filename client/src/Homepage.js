@@ -16,8 +16,8 @@ function Homepage() {
 	  
 			{/* this was the code written by the smart dude, need to look more into it to understand what's going on*/}
 			<SearchBar placeholder="Enter a song" setSearchQuery={(q) => {
-				setSearchQuery(q);
-				setIsOpen(true);
+				setSearchQuery(q)
+				setIsOpen(true)
 			}}/>
 	
 			{isOpen && <Modal setIsOpen={setIsOpen} searchQuery={searchQuery} />}
