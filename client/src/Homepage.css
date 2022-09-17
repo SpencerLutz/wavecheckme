@@ -8,13 +8,13 @@
 	background-image: linear-gradient(#211a97, #35025c);
 }
 
-img {
+.logoImg {
 	height: 120px;
 	text-align: left;
-    	display: block;
-    	justify-content: left;
-    	align-items: left;
-    	margin: auto;
+	display: block;
+	justify-content: left;
+	align-items: left;
+	margin: auto;
  }
 
  .primaryBtn {
