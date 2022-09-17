@@ -58,3 +58,7 @@ img {
   background: #a0fe84;
   transition: all 0.25s ease;
 }
+
+.creditText {
+	color: 'white';
+}

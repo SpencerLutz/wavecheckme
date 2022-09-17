@@ -24,7 +24,7 @@ function Homepage() {
 			{isOpen && <Modal setIsOpen={setIsOpen} searchQuery={searchQuery} />}
 	
 			<h1></h1><h1></h1><h1></h1><h1></h1> 
-			<h5 style={{ color: 'white' }}>BitCamp 2022: Alex Dobrzycki, Alejandro Echaniz, Maia Gustafson, and Spencer Lutz</h5>
+			<h5 className='creditText'>BitCamp 2022: Alex Dobrzycki, Alejandro Echaniz, Maia Gustafson, and Spencer Lutz</h5>
 		</div>
 	);
 }
