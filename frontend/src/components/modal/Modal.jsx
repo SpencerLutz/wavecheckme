@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Modal.module.css";
+import styles from "./Modal.css";
 import { RiCloseLine } from "react-icons/ri";
 
 const Modal = ({ setIsOpen, searchQuery }) => {
@@ -38,7 +38,7 @@ const Modal = ({ setIsOpen, searchQuery }) => {
           <div id="artist" className={styles.modalContent2}>
             
           </div>
-          <a id="link" className={styles.modalContent3} href="">
+          <a id="link" className={styles.modalContent3} href="https://music.apple.com/us/new">
             Find on iTunes
           </a>
           <div className={styles.modalActions}>

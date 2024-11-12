@@ -1,6 +1,5 @@
 import React from 'react';
 import "./SearchBar.css";
-import Modal from "./Modal"
 
 function SearchBar({placeholder, setSearchQuery}) {
 
@@ -8,7 +7,7 @@ function SearchBar({placeholder, setSearchQuery}) {
     <div className="search">
       <div className="searchInputs">
         <input type="text" placeholder={placeholder} onKeyDown={(e) => {
-          if(e.code == "Enter") {
+          if(e.code === "Enter") {
             let term = encodeURIComponent(e.target.value).replace(/%20/g, "+");
             setSearchQuery(term);
           }

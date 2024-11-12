@@ -1,8 +1,9 @@
 import React from 'react'
-import './Homepage.css'
-import SearchBar from './components/SearchBar'
 import {useState} from 'react'
-import Modal from "./components/Modal"
+
+import './Homepage.css'
+import Modal from "../../components/modal/Modal"
+import SearchBar from '../../components/searchBar/SearchBar'
 
 function Homepage() {
 	const [isOpen, setIsOpen] = useState(false)
@@ -21,8 +22,7 @@ function Homepage() {
 			}}/>
 	
 			{isOpen && <Modal setIsOpen={setIsOpen} searchQuery={searchQuery} />}
-	
-			<h1></h1><h1></h1><h1></h1><h1></h1> 
+
 			<h5 className='creditText'>BitCamp 2022: Alex Dobrzycki, Alejandro Echaniz, Maia Gustafson, and Spencer Lutz</h5>
 		</div>
 	)
