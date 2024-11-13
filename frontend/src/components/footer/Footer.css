@@ -1,0 +1,27 @@
+/* Footer.css */
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #343a40;
+    color: white;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.footer a, a:visited {
+  color: white;
+  user-select: none; 
+  text-decoration: none;
+  animation-delay: 5;
+  transition-duration: 0.4s;
+} 
+
+.footer a:hover {
+  color: orange;
+}
+
+.footer a:active {
+  color: #ff419e; 
+}
